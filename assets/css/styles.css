@@ -26,9 +26,72 @@ body {
 
 .message-bar {
 	width: 400px;
-	height: 752px;
+	height: 700px;
 	background-color: rgb(73, 73, 73);
 }
+
+.message-row {
+	display: flex;
+	margin-bottom: 12px;
+}
+
+.message-row.left{
+	justify-content: flex-start;
+}
+
+.message-row.right{
+	justify-content: flex-end;
+}
+
+.message-bubble{
+	display:inline-block;
+	background-color: gray;
+	color: white;
+	padding: 10px 16px;
+	border-radius: 18px;
+	max-width: 60%;
+	word-wrap: break-word;
+}
+
+.testimg.jpg {
+	width: 1px;
+	height:auto;
+}
+
+/* Solution to text problem */
+.page {
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+.chat-section {
+  min-width: 0;
+  background-color: rgb(54, 54, 54);
+}
+
+.chat-area {
+  min-height: 0;
+}
+
+.messages {
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.message-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.message-row.left {
+  justify-content: flex-start;
+}
+
+.message-row.right {
+  justify-content: flex-end;
+}
+
 
 /* styles.css */
 /* 
