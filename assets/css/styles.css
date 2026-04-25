@@ -3,3 +3,67 @@
 * {
 	font-family: Arial;
 }
+
+body {
+	background-color: rgb(34, 34, 34);
+	color: whitesmoke;
+}
+
+.logo {
+	font-family: Arial;
+	font-size: 2rem;
+	color: white;
+}
+
+.search-bar {
+	max-width: 700px;
+	height: 50px;
+	background-color: rgb(146, 146, 146);
+	border: 1px;
+	border-color: white;
+	color: white;
+}
+
+.message-bar {
+	width: 400px;
+	height: 752px;
+	background-color: rgb(73, 73, 73);
+}
+
+/* styles.css */
+/* 
+* {
+	font-family: Arial;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 1rem;
+	background-color:black;
+	color: rgb(255, 255, 255);
+	font-size: 5rem;
+	overflow: hidden;
+	background: url("../img/flames.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.grid-container {
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	margin: 10% 4rem 0 4rem;
+}
+
+.last {
+	padding-bottom: 2rem;
+	border-bottom: 2px solid rgb(220, 200, 180);
+}
+
+div {
+	transition-property: transform;
+	transition-duration: 3s;
+} */
