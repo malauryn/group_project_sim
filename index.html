@@ -22,13 +22,27 @@
 
 	<div class="d-flex page">
 
-		<!-- Side-bar logos -->
+		<!-- Side-bar logos  (please replace icons and center)-->
 
-		<div class=" side-bar d-flex flex-column mb-3 ms-4 mt-5">
-			<div class="speech-bubble p-2">speech</div>
-			<div class="people p-2">contacts</div>
-			<div class="calender p-2">calender</div>
-			<div class="cell-phone p-2">cell phone</div>
+		<div class="side-bar d-flex flex-column mb-3 ms-3 mt-5">
+
+			<div class="speech-bubble p-2">
+				<img src="assets/img/speechbub.jpg" class="left-icons" alt="speech-bubble icon">
+			</div>
+
+			<div class="people p-2">
+				<img src="assets/img/contacticon.jpg" class="left-icons" alt="contact icon">
+			</div>
+
+			<div class="calender p-2">
+				<img src="assets/img/calendericon.jpg" class="left-icons" alt="calender icon">
+			</div>
+
+			<div class="cell-phone p-2">
+				<img src="assets/img/cellphoneicon.jpg" class="left-icons" alt="cell-phone icon">
+			</div>
+
+
 		</div>
 
 		<!-- Message Bar -->
@@ -36,10 +50,10 @@
 		<div class="message-bar p-3">
 			<h5>Chat</h5>
 
-			<div class="d-flex gap-5 my-4">
-				<div class="top-options">s</div>
-				<div class="top-options">d</div>
-				<div class="top-options">f</div>
+			<div class="d-flex gap-2 my-4">
+				<div class="top-options">Unread</div>
+				<div class="top-options-blue">Chats</div>
+				<div class="top-options">Meeting room</div>
 			</div>
 
 			<div class="d-flex gap-5 my-4">
@@ -47,10 +61,12 @@
 			</div>
 
 			<div class="d-flex gap-3 my-2">
-				<div class="flex-shrink-0">
-					<!-- <img src="assets/img/testimg.jpg" alt="profile picture of Audrey"> -->
+				<div class="profile-icon-left">
+					<img src="assets/img/testimg.jpg" class="profile-pic" alt="profile picture of Audrey">
+					<div class="Audrey-name">
+						<div class="profile-text">McHaughen, Audrey (You)</div>
+					</div>
 				</div>
-				<div class="profile-text">McHaughen, Audrey (You)</div>
 			</div>
 
 			<div class="d-flex gap-5 my-4">
@@ -67,48 +83,63 @@
 		</div>
 
 		<!-- Main Chat Area -->
-		<div class="d-flex page">
+		<div class="chat-section flex-grow-1 d-flex flex-column">
 
 			<!-- Team 1 on main page -->
 			<div class="d-flex gap-2 mx-3 my-3">
-				<div class="flex-shrink-0">
-					<!-- <img src="assets/img/..." alt="picture of team profile"> -->
-				</div>
-
 				<div class="team-1-main-chat">Team 1</div>
 			</div>
 
 			<!-- Main chat area (scorllable) -->
 			<div class="chat-area flex-grow-1 d-flex flex-column">
 				<div class="messages flex-grow-1 overflow-auto p-4">
+
+					<div class="message-row left">
+						<img src="assets/img/pfp1.jpg" class="profile-pic" alt="profile icon of Collin">
+						<div class="message-content">
+							<div class="message-name">Dillydally, Collin</div>
+							<div class="message-bubble">Hi guys. It's nice to meet you, I'm Collin from intro to board games.</div>
+						</div>
+					</div>
+
+					<div class="message-row left">
+						<img src="assets/img/pfp2.jpg" class="profile-pic" alt="profile icon of Benedict">
+						<div class="message-content">
+							<div class="message-name">Sillybilly, Benedict</div>
+							<div class="message-bubble">hello, I'm Benedict.</div>
+						</div>
+					</div>
+
+					<div class="message-row right">
+						<div class="message content">
+							<div class="message-name text-end">McHaughen, Audrey</div>
+							<div class="message-bubble">Nice to meet you! I'm Audrey.</div>
+						</div>
+						<img src="assets/img/testimg.jpg" class="profile-pic" alt="profile icon of Audrey">
+					</div>
+
+					<div class="message-row left">
+						<img src="assets/img/pfp3.jpg" class="profile-pic" alt="profile icon of Dillian">
+						<div class="message-content">
+							<div class="message-name">Bruhv, Dillian</div>
+							<div class="message-bubble">Hello, my name is Dillian.</div>
+						</div>
+					</div>
+
+					<div class="message-row left">
+						<img src="assets/img/pfp4.jpg" class="profile-pic" alt="profile icon of Ethan">
+						<div class="message-content">
+							<div class="message-name">Invis, Ethan</div>
+							<div class="message-bubble">hi</div>
+						</div>
+					</div>
+
 					
-					<div class="message-row left">
-						<div class="message-bubble">Left message</div>
-					</div>
-
-						<div class="Collin-name"> Unaveltoo, Collin Ucate</div>
-						<div class="d-flex align-items-center">
-							<div class="flex-shrink-0">
-								<img src="assets/img/testimg.jpg" alt="profile icom of Collin">
-							</div>
-						<div class="message-bubble">Left message</div>
-					</div>
-
-					<div class="message-row right">
-						<div class="message-bubble">Right message</div>
-					</div>
-					<div class="message-row left">
-						<div class="message-bubble">Left message</div>
-					</div>
-
-					<div class="message-row right">
-						<div class="message-bubble">Right message</div>
-					</div>
-
-
-
 				</div>
 			</div>
+
+			<!-- Don't touch this -->
+<input class="form-control search-bar mx-auto w-70" class="type-message" placeholder="Type a message">
 
 
 			<!-- end of div for main chat area -->
