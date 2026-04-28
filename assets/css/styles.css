@@ -30,7 +30,7 @@ body {
 	background-color: rgb(73, 73, 73);
 }
 
-.message-row {
+/* .message-row {
 	display: flex;
 	margin-bottom: 12px;
 }
@@ -51,7 +51,7 @@ body {
 	border-radius: 18px;
 	max-width: 60%;
 	word-wrap: break-word;
-}
+} */
 
 .top-options-blue{
 	background-color: rgb(55, 116, 185);
@@ -149,12 +149,3 @@ flex-shrink: 0;
 	max-width: 100%;
 	word-wrap: break-word;
 }
-
-
-/* Text-bar */
-
-/* .type-message {
-  position: fixed;
-  width: 100%;
-  height: 40px;
-} */

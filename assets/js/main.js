@@ -1,25 +1,26 @@
 // main.js
 
-console.log("Hello, World!");
+console.log("Hello World!");
 
-// 1. Create the audio object
-const popSound = new Audio('audio/bensound-lucky.mp3');
+const messagesContainer = document.querySelector(".messages");
+const soundTrigger = document.querySelector(".sound-trigger");
+const notificationSound = document.querySelector("#notificationSound");
 
-// 2. Setup the Intersection Observer
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    // If the image is visible on screen
-    if (entry.isIntersecting) {
-      popSound.play().catch(error => {
-        console.log("Autoplay blocked! The user needs to click somewhere first.");
-      });
-      // Optional: Stop observing if you only want the sound to play once
-      // observer.unobserve(entry.target); 
+let soundPlayed = false;
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    entries.forEach(function (entry) {
+    if (entry.isIntersecting && soundPlayed ===false){
+      notificationSound.play();
+      soundPlayed = true;
     }
   });
-}, { threshold: 0.5 }); // 0.5 means 50% of the image must be visible
+},
+{
+  root: messagesContainer,
+  threshold: 0.6
+}
+);
 
-// 3. Tell the observer which images to watch
-document.querySelectorAll('.sound-trigger').forEach(img => {
-  observer.observe('DnMLogo.jpg');
-});
+observer.observe(soundTrigger);
