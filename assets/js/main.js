@@ -12,6 +12,7 @@ const observer = new IntersectionObserver(
   function (entries) {
     entries.forEach(function (entry) {
     if (entry.isIntersecting && soundPlayed ===false){
+      notificationSound.volume = 0.07; // Set volume to 50%
       notificationSound.play();
       soundPlayed = true;
     }
@@ -24,4 +25,7 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(soundTrigger);
+
+
+
 
