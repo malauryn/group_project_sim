@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Group Project Simulator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+
+<body>
+
+
+	<!-- <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly> -->
+	<div class="top-of-page d-flex align-items-center px-4 py-3">
+		<div class="logo">W</div>
+		<input class="form-control search-bar mx-auto w-50" placeholder="Search">
+	</div>
+
+	<!-- Thin top border line white -->
+	<div class="border-top border-white opactiy-50"></div>
+
+	<div class="d-flex page">
+
+		<!-- Side-bar logos  (please replace icons and center)-->
+
+		<div class="side-bar d-flex flex-column  mb-3 ms-3 mt-5">
+
+			<div class="speech-bubble p-2">
+				<img src="assets/img/speechbub.jpg" class="left-icons" alt="speech-bubble icon">
+			</div>
+
+			<div class="people p-2">
+				<img src="assets/img/contacticon.jpg" class="left-icons" alt="contact icon">
+			</div>
+
+			<div class="calender p-2">
+				<!-- <a href="calender.html"></a> -->
+				<img src="assets/img/calendericon.jpg" class="left-icons" alt="calender icon">
+			</div>
+
+			<div class="cell-phone p-2">
+				<img src="assets/img/cellphoneicon.jpg" class="left-icons" alt="cell-phone icon">
+			</div>
+
+
+		</div>
+
+		<!-- Message Bar -->
+
+		<div class="message-bar p-3">
+			<div class="border-right border-white opactiy-50"></div>
+			<h5>Chat</h5>
+
+			<div class="d-flex gap-2 my-4">
+				<div class="top-options">Unread</div>
+				<div class="top-options-blue">Chats</div>
+				<div class="top-options">Meeting room</div>
+			</div>
+
+			<div class="d-flex gap-5 my-4">
+				<h6>Profile</h6>
+			</div>
+
+			<!-- Always in wrapper add directions -->
+			<div class="d-flex gap-3 my-2">
+				<div class="profile-icon-left d-flex align-items-center gap-2">
+					<img src="assets/img/testimg.jpg" class="profile-pic" alt="profile picture of Audrey">
+					<div class="Audrey-name">
+						<div class="profile-text">McHaughen, Audrey (You)</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-flex gap-5 my-4">
+				<h6>Chats</h6>
+			</div>
+
+			<div class="d-flex gap-3 my-2">
+  <div class="profile-icon-left d-flex align-items-center gap-2">
+    <img src="assets/img/tea.jpg" class="profile-pic" alt="profile picture of team 1">
+    <div class="side-group">
+      <a href="index.html">Team 1</a>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex gap-3 my-2">
+  <div class="profile-icon-left d-flex align-items-center gap-2">
+    <img src="assets/img/person icon.jpg" class="profile-pic" alt="profile picture">
+    <div class="side-group">
+      <a href="ex-chat.html">Mom</a>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="d-flex gap-3 my-2">
+  <div class="profile-icon-left d-flex align-items-center gap-2">
+    <img src="assets/img/mompfp.png" class="profile-pic" alt="profile picture of Mom">
+    <div class="side-group">
+      <a href="mom.html">Mom</a>
+    </div>
+  </div>
+</div> -->
+
+		</div>
+
+		<!-- Main Chat Area -->
+
+		<div class="chat-section flex-grow-1 d-flex flex-column">
+
+			<!-- Team 1 on main page -->
+			<div class="d-flex gap-2 mx-3 my-3">
+				<div class="team-1-main-chat">248-434-5508</div>
+			</div>
+
+			<div class="border-top border-white opactiy-50"></div>
+
+			<!-- Main chat area (scorllable) -->
+			<div class="chat-area flex-grow-1 d-flex flex-column">
+				<div class="messages flex-grow-1 overflow-auto p-4">
+
+					<div class="message-row left">
+						<img src="assets/img/mompfp.png" class="profile-pic" alt="profile icon of Mom">
+						<div class="message-content">
+							<div class="message-name">Mom</div>
+							<div class="message-bubble">Hey honey I just wanted to let you know that we no longer have Wifi. Will you be able to manage?</div>
+						</div>
+					</div>
+
+
+					<div class="message-row right">
+						<div class="message-content">
+							<div class="message-name text-end">McHaughen, Audrey</div>
+							<div class="message-bubble">I'll be fine, Mom. I'll just have to rely on my phone for internet access.</div>
+						</div>
+						<img src="assets/img/testimg.jpg" class="profile-pic" alt="profile icon of Audrey">
+					</div>
+
+					<div class="message-row left">
+						<img src="assets/img/mompfp.png" class="profile-pic" alt="profile icon of Mom">
+						<div class="message-content">
+							<div class="message-name">Mom</div>
+							<div class="message-bubble">That's a smart idea!</div>
+						</div>
+					</div>
+
+					<div class="message-row right">
+						<div class="message-content">
+							<div class="message-name text-end">McHaughen, Audrey</div>
+							<div class="message-bubble">Mom I have this group project, but nobody is working.</div>
+						</div>
+						<img src="assets/img/testimg.jpg" class="profile-pic" alt="profile icon of Audrey">
+					</div>
+
+					<div class="message-row left">
+						<img src="assets/img/mompfp.png" class="profile-pic" alt="profile icon of Mom">
+						<div class="message-content">
+							<div class="message-name">Mom</div>
+							<div class="message-bubble">I remember you telling me last night. Have you tried emailing the teacher?</div>
+						</div>
+					</div>
+
+					<div class="message-row right">
+						<div class="message-content">
+							<div class="message-name text-end">McHaughen, Audrey</div>
+							<div class="message-bubble">Yes, but all I've been told is to fill out the peer-review.</div>
+						</div>
+						<img src="assets/img/testimg.jpg" class="profile-pic" alt="profile icon of Audrey">
+					</div>
+
+					<div class="message-row left">
+						<img src="assets/img/mompfp.png" class="profile-pic" alt="profile icon of Mom">
+						<div class="message-content">
+							<div class="message-name">Mom</div>
+							<div class="message-bubble">I understand, honey.</div>
+						</div>
+					</div>
+
+					<div class="message-row right">
+						<div class="message-content">
+							<div class="message-name text-end">McHaughen, Audrey</div>
+							<div class="message-bubble">And Mom, since the breakup it's been really hard for me to go to school. This group project is taking up all my time, and I'm barely getting any sleep. I'm feeling really sick right now, and nobody is doing their work. It's just not fair.</div>
+						</div>
+						<img src="assets/img/testimg.jpg" class="profile-pic" alt="profile icon of Audrey">
+					</div>
+
+					<div class="message-row left">
+						<img src="assets/img/mompfp.png" class="profile-pic" alt="profile icon of Mom">
+						<div class="message-content">
+							<div class="message-name">Mom</div>
+							<div class="message-bubble">It's just how these group projects are baby. And I'm so sorry. We're going to fix this together, and when you get home you sleep. Remember, when you find a good group project those are the friends you make for life.</div>
+						</div>
+					</div>
+
+					
+					<!--  -->
+				</div>
+			</div>
+
+			<!-- Don't touch this -->
+			<input class="form-control search-bar mx-auto type-message" placeholder="Type a message">
+
+
+			<!-- end of div for main chat area -->
+		</div>
+		<!-- End of page </div> --> 
+	</div>
+	<audio id="notificationSound" src="assets/audio/letmeknowsoundaffect.mp3"></audio>
+	<script src="./assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
